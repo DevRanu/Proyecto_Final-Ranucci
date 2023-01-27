@@ -1,0 +1,43 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'assets/img/about-bg.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p> Hola, Mundirijillo! Soy Carlos y esta página que estás usando
+                     es mi proyecto final del curso de Python de <a href="https://www.coderhouse.com/">Coderhouse</a>.
+                    </p>
+                <p> Este es mi primer curso de programación, por lo que puede haber fallas, más que seguro.
+                    Espero lograr cumplir la mayor cantidad posible de objetivos indicados en <a href="https://docs.google.com/document/d/1d1XbdZabfYoXHLlg4o0rRzwccIrWvU3ZPdv8ZZ8avPo/edit">este</a>
+                     archivo.
+                    </p>
+                <p> Podés usar <a href="https://www.coderhouse.com/?referral-cpn=632be62c712ef0000e0eb4bd">mi código de referido</a> (coder.carlos.ae29) para inscribirte en <a href="https://www.coderhouse.com/">Coderhouse</a> y comenzar a aprender sobre como hacer páginas como esta,
+                     usando <a href="https://www.djangoproject.com/">Django</a> y plantillas de <a href="https://getbootstrap.com/">Bootstrap</a>
+                     con un descuento adicional!.
+                    </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}
